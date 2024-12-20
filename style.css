@@ -287,16 +287,16 @@ input:user-invalid{
         border: 1px solid var(--text-color);
     }
     form, #summary{
-        margin: 3.3rem auto;
+        margin: 4.2rem auto;
     }
     #modal .modal-content p {
         max-width: 85%;
     }
 
     #modalError {
-        top: 20%;
+        top: 40%;
     }
     #summary #modal{
-        top: 20%;
+        top: 40%;
     }
 }
