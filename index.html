@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Multi-step form. Submit your information quickly and securely.">
+    <meta name="keywords" content="multi-step form, online form, easy form, quick form, application form, registration form">
+    <title>Multi-step Form</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div id="modalError">
+            <p>Please fill all details</p>
+            <span id="closeError">&times;</span>  
+        </div>
+        <div class="steps">
+            <div class="cols">
+                <img src="assets/one.png" alt="steps" id="imgOne">
+            </div>
+            <div class="cols">
+                <img src="assets/two.png" alt="steps" id="imgTwo">
+            </div>
+            <div class="cols">
+                <img src="assets/three.png" alt="steps" id="imgThree">
+            </div>
+        </div>
+        <div class="form-slides">
+            <form id="form1">
+                <span><img src="assets/user.png" alt="User" id="formImg"></span>
+                <h1>Personal Info</h1>
+                <input type="text" id="fullname" name="name" placeholder="FirstName" required>
+                <input type="text" id="lastname" name="name" placeholder="LastName" required>
+                <input type="email" id="email" name="Email" placeholder="Email" required>
+                <div class="navigate-btns">
+                    <button type="button" id="next1">Next</button>
+                </div>
+            </form>
+            <form id="form2">
+                <span><img src="assets/choice.png" alt="Choices" id="formImg"></span>
+                <h1>Preferences</h1>
+                <label for="category">Category</label>
+                <select id="category" name="Category" required>
+                    <option value="">Select a category</option>
+                    <option value="Tech">Tech</option>
+                    <option value="Health">Health</option>
+                    <option value="Sports">Sports</option>
+                </select>
+                <div id="tech-options" style="display: none;">
+                    <label for="languages">Programming Language</label>
+                    <select name="Languages" id="languages">
+                        <option value="">Select a category</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                        <option value="Golang">Golang</option>
+                        <option value="Rust">Rust</option>
+                    </select>
+                </div>
+                <div id="health-options" style="display: none;">
+                    <label for="Diet">Dietary Preferences</label>
+                    <select name="Diet" id="Diet">
+                        <option value="">Select a category</option>
+                        <option value="Keto">Keto</option>
+                        <option value="Protein">Protein</option>
+                        <option value="No fat">No-fat</option>
+                        <option value="Fiber">Fiber</option>
+                    </select>
+                </div>
+                <div id="sports-options" style="display: none;">
+                    <label for="Sports">Sports Preferences</label>
+                    <select name="Sports" id="Sports">
+                        <option value="">Select a category</option>
+                        <option value="Football">Football</option>
+                        <option value="Surfing">Surfing</option>
+                        <option value="Skiing">Skiing</option>
+                        <option value="Basketball">Basketball</option>
+                    </select>
+                </div>
+                <div class="navigate-btns">
+                    <button type="button" id="previous1">Previous</button>
+                    <button type="button" id="next2">Next</button>
+                </div>
+            </form>
+            <div id="summary">
+                <div id="summaryInfo"></div>
+                <div class="navigate-btns">
+                    <button type="button" id="previous2">Previous</button>
+                    <button type="button" id="finalSubmit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
