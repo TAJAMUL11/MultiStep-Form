@@ -91,6 +91,7 @@ function validateForm2() {
     return true;
 }
 
+
 next1.onclick = function () {
     if (validateForm1()) {
         formSlides.style.transform = 'translateX(-100%)';

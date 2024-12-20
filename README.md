@@ -17,8 +17,8 @@ Smooth Animations: Transitions between steps for a better user experience.
 How to Use
 Clone this repository:
 
-bash
 git clone https://github.com/TAJAMUL11/MultiStep-Form.git
+
 Open the index.html file in your web browser to view and use the form.
 
 Code Structure

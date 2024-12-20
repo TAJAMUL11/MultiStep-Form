@@ -265,7 +265,7 @@ form input {
     position: absolute;
     right: 0;
     top: 0;
-    color: #fff;
+    color: #fffffff1;
     background-color: var(--button-bg-color);
     padding: 0 0.4rem;
     border-radius: var(--border-radius);
