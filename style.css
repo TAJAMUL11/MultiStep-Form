@@ -53,7 +53,7 @@ body {
 #modalError #closeError{
     cursor: pointer;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     position: absolute;
     right: 0;
     top: 0;
@@ -145,7 +145,7 @@ form input {
     border: none;
     outline: 1px solid var(--text-color);
     color: var(--text-color);
-    font-size: 1.07rem;
+    font-size: 1.1rem;
     padding: 0.7rem 0.3rem;
     margin-bottom: 0.7rem;
     border-radius: var(--border-radius);
@@ -194,14 +194,12 @@ input:user-invalid{
     display: none;
     padding: 0.3rem 0;
 }
-#tech-options, #health-options, #sports-options  label {
-    margin: 0.6rem 0;
-
-
+#tech-options, #health-options, #sports-options{
+    margin: 0.8rem 0;
 }
 
-#form2 label{
-    font-size: 1.1rem;
+label{
+    font-size: 1.3rem;
 }
 #form2{
     display: flex;
@@ -218,6 +216,7 @@ input:user-invalid{
     text-align: center;
     padding: 0.5rem 0;
     border: 1px solid var(--text-color);
+    outline: none;
     background-color: #fff;
     font-size: 1.05rem;
 }
@@ -230,13 +229,6 @@ input:user-invalid{
     width: 73px;
     height: auto;
     object-fit: contain;
-}
-
-#summary h1 {
-    font-size: 2.2rem;
-    color: var(--text-color);
-    font-weight: bold;
-    margin: 1rem 0;
 }
 
 #summary #summaryInfo {
@@ -268,7 +260,7 @@ input:user-invalid{
 .close-modal {
     cursor: pointer;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     position: absolute;
     right: 0;
     top: 0;
@@ -278,7 +270,7 @@ input:user-invalid{
     border-radius: var(--border-radius);
 }
 
-@media (max-width: 430px){
+@media (max-width: 450px){
     .form-container{
         width: 100%;
         height: 100%;
@@ -287,16 +279,52 @@ input:user-invalid{
         border: 1px solid var(--text-color);
     }
     form, #summary{
-        margin: 4.2rem auto;
+        margin: 2.5rem auto;
     }
+    form input{
+        font-size: 1.23rem;
+    }
+    .navigate-btns button {
+        padding: 1rem 1.5rem;
+        font-size: 1.1rem;
+    }
+    form h1, #summary h1 {
+        font-size: 2.75rem;
+    }
+    .form-container .steps {
+        padding: 1rem;
+        height: 4rem;
+    }
+    #form2 select{
+        width: 100%;
+        font-size: 1.25rem;
+    }
+    
+    .steps .cols {
+        padding: 0.4rem;
+        
+    }
+    .steps .cols img {
+        width: 50px;
+    }
+    #summary #summaryImg {
+        width: 115px;
+    }
+    form span #formImg {
+        width: 120px;
+    }
+    #summaryInfo p{
+        font-size: 1.2rem;
+    }
+
     #modal .modal-content p {
         max-width: 85%;
     }
 
     #modalError {
         top: 40%;
+        padding: 1.6rem;
+        font-size: 1.3rem;
     }
-    #summary #modal{
-        top: 40%;
-    }
+
 }
