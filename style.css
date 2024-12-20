@@ -281,8 +281,13 @@ input:user-invalid{
 @media (max-width: 430px){
     .form-container{
         width: 100%;
-        height: 98%;
-        border-radius: none;
+        height: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        border: 1px solid var(--text-color);
+    }
+    form, #summary{
+        margin: 3.3rem auto;
     }
     #modal .modal-content p {
         max-width: 85%;
