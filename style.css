@@ -111,8 +111,13 @@ body {
 
 form, #summary {
     min-width: 100%;
+    height: 100%;
     text-align: center;
     padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 form span #formImg {
@@ -131,18 +136,25 @@ form h1, #summary h1 {
     color: var(--text-color);
     font-weight: bold;
     margin-bottom: 1.1rem;
+    text-align: center;
 }
 
 form input {
     width: 100%;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid var(--text-color);
-    outline: none;
+    outline: 1px solid var(--text-color);
     color: var(--text-color);
     font-size: 1.07rem;
     padding: 0.7rem 0.3rem;
     margin-bottom: 0.7rem;
+    border-radius: var(--border-radius);
+}
+input:user-valid{
+   outline-color: green;
+}
+input:user-invalid{
+    outline-color: red;
 }
 
 ::placeholder {
@@ -214,17 +226,11 @@ form input {
     font-weight: 700;
     
 }
-#summary {
-    text-align: center;
-    user-select: none;
-}
-
 #summary #summaryImg {
     width: 73px;
     height: auto;
     object-fit: contain;
 }
-
 
 #summary h1 {
     font-size: 2.2rem;
@@ -234,6 +240,7 @@ form input {
 }
 
 #summary #summaryInfo {
+    user-select: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -271,15 +278,20 @@ form input {
     border-radius: var(--border-radius);
 }
 
-@media (max-width: 445px){
+@media (max-width: 430px){
     .form-container{
         width: 100%;
-        height: 100%;
+        height: 98%;
         border-radius: none;
-        box-shadow: none;
     }
     #modal .modal-content p {
         max-width: 85%;
     }
 
+    #modalError {
+        top: 20%;
+    }
+    #summary #modal{
+        top: 20%;
+    }
 }
