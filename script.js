@@ -143,6 +143,7 @@ function generateSummary() {
   summaryInfo.innerHTML = `
         <span><img src="assets/smiley.svg" alt="Summary" id="summaryImg"></span>
         <h1>Summary</h1>
+        <p class = "summaryP">Double check before submit</p>
         <p>Full Name: ${fullname} ${lastname}</p>
         <p>Email: ${email}</p>
         <p>Category: ${category}</p>

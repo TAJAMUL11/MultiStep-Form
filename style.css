@@ -130,7 +130,7 @@ form span #formImg {
 }
 
 form .formP {
-  font-size: 0.7;
+  font-size: 0.9;
   color: var(--text-color);
   opacity: 0.7;
   margin: 0.2rem 0 0.5rem 0;
@@ -219,7 +219,6 @@ form input {
 #form2 select {
   cursor: pointer;
   width: 250px;
-  text-align: center;
   padding: 0.7rem;
   border: none;
   border-radius: var(--border-radius);
@@ -233,7 +232,7 @@ form input {
   font-weight: 600;
 }
 #summary #summaryImg {
-  width: 240px;
+  width: 300px;
   height: auto;
   object-fit: contain;
 }
@@ -253,6 +252,15 @@ form input {
   padding: 0.4rem 0.7rem;
   background-color: #42004c0f;
   border-radius: var(--border-radius);
+  text-align: center;
+}
+#summaryInfo .summaryP {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  padding: auto;
+  margin: 0 0 0.3rem 0;
+  background-color: transparent;
+  border-radius: none;
 }
 
 #modal .modal-content {
@@ -290,24 +298,20 @@ form input {
   form input {
     font-size: 1.15rem;
   }
+  form .formP {
+    font-size: 1.1;
+  }
 
   #form2 select {
-    cursor: pointer;
-    text-align: center;
-    padding: 0.7rem;
-    border: none;
-    border-radius: var(--border-radius);
-    outline: none;
-    background-color: var(--text-color);
-    font-size: 1.05rem;
-    color: #fff;
+    width: 310px;
+    font-size: 1.15rem;
   }
 
   .steps .cols img {
     width: 35px;
   }
   .mainCategory {
-    width: 65%;
+    width: 85%;
   }
 
   #summaryInfo p {
@@ -316,6 +320,9 @@ form input {
 
   #modal .modal-content p {
     max-width: 85%;
+  }
+  .navigate-btns button {
+    padding: 1.2rem 1.8rem;
   }
 
   #modalError {
