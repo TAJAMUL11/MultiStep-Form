@@ -49,7 +49,7 @@ body {
   text-align: center;
   color: var(--button-bg-color);
   background-color: #fff;
-  margin: 15% auto;
+  margin: 20% auto;
   padding: 20px;
   border-radius: var(--border-radius);
   width: 300px;
@@ -61,11 +61,11 @@ body {
   font-weight: 700;
   font-size: 1.3rem;
   color: var(--text-color);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   opacity: 0.8;
   transition: all 0.3s ease;
 }
-#modalError #closeError:hover{
+#modalError #closeError:hover {
   opacity: 1;
 }
 
@@ -238,7 +238,7 @@ form input {
   font-weight: 600;
 }
 #summary #summaryImg {
-  width: 300px;
+  width: 290px;
   height: auto;
   object-fit: contain;
 }
@@ -248,46 +248,46 @@ form input {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 0.7rem 0;
+  gap: 0.5rem 0;
   flex-direction: column;
 }
 
 #summaryInfo p {
   color: var(--text-color);
   font-size: 1.08rem;
-  padding: 0.4rem 0.7rem;
-  background-color: #42004c0f;
-  border-radius: var(--border-radius);
+  padding: 0.3rem 0.7rem;
+  background-color: #0000001a;
+  backdrop-filter: blur(7px);
   text-align: center;
 }
 #summaryInfo .summaryP {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   opacity: 0.6;
   padding: auto;
   margin: 0 0 0.5rem 0;
   background-color: transparent;
-  border-radius: none;
+  border-radius: 0;
 }
 
 #modal .modal-content {
   text-align: center;
 }
 #modal .modal-content p {
-  max-width: 65%;
+  padding: 0.3rem;
+  max-width: 85%;
   margin: 0 auto;
+  color: var(--button-bg-color);
 }
 
 .close-modal {
   cursor: pointer;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   position: absolute;
+  color: var(--button-bg-color);
   right: 0;
   top: 0;
-  color: #fffffff1;
-  background-color: var(--button-bg-color);
   padding: 0 0.4rem;
-  border-radius: var(--border-radius);
 }
 
 @media (max-width: 450px) {
@@ -327,12 +327,11 @@ form input {
   #summaryInfo p {
     font-size: 1.2rem;
   }
-
   #modal .modal-content p {
-    max-width: 85%;
+    max-width: 95%;
   }
+
   .navigate-btns button {
     padding: 1.2rem 1.8rem;
   }
-
 }

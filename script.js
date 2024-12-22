@@ -18,19 +18,16 @@ let progressRange = document.getElementById("progress-range");
 let initialProgressRange = 0;
 let maxProgressRange = 100;
 
-// Elements for conditional rendering
 let categorySelect = document.getElementById("category");
 let techOptions = document.getElementById("tech-options");
 let healthOptions = document.getElementById("health-options");
 let sportsOptions = document.getElementById("sports-options");
 
 categorySelect.addEventListener("change", function () {
-  // Conditional sections
   techOptions.style.display = "none";
   healthOptions.style.display = "none";
   sportsOptions.style.display = "none";
 
-  // Selected category's options
   let selectedCategory = categorySelect.value;
   if (selectedCategory === "Tech") {
     techOptions.style.display = "block";
@@ -143,7 +140,7 @@ function generateSummary() {
   summaryInfo.innerHTML = `
         <span><img src="assets/smiley.svg" alt="Summary" id="summaryImg"></span>
         <h1>Summary</h1>
-        <p class = "summaryP">Double check before submit</p>
+        <p class = "summaryP">All your details</p>
         <p>Full Name: ${fullname} ${lastname}</p>
         <p>Email: ${email}</p>
         <p>Category: ${category}</p>
